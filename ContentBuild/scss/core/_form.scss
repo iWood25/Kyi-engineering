@@ -4,10 +4,10 @@
 
 input,
 textarea {
-	background-color: $gallery;
+	background-color: $silver;
 	border: 0;
 	box-shadow: none;
-	color: $silver;
+	color: $colorText;
 	display: block;
 	font-family: $fontBaron;
 	font-size: 1.4rem;
@@ -19,12 +19,6 @@ textarea {
 	-webkit-text-fill-color: $silver;
 
 	&:focus {
-		outline: 1px solid $alto;
-	}
-
-	&:-webkit-autofill {
-		box-shadow: 0 0 0 50px $gallery inset;
-		border-radius: 0;
 	}
 
 	// hide input placeholder on field focus

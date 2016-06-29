@@ -17,7 +17,7 @@ html {
 	// remove gray highlight when tapping links in mobile
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent; // for some Androids
-	background-color: $concrete;
+	background-color: $whisper;
 }
 
 body {
@@ -38,8 +38,7 @@ body {
 
 a,
 .link {
-	color: $mirage;
-	font-weight: bold;
+	color: $colorLink;
 	text-decoration: none;
 	transition: color .2s linear;
 
@@ -82,11 +81,11 @@ h6 {
 	font-family: $fontHeading;
 	margin: 0;
 	text-align: center;
-	letter-spacing: 2px;
+	letter-spacing: normal;
 }
 
 .h2 {
-	font-size: 4.5rem;
+	font-size: 2.4rem;
 	padding-top: 4rem;
 	padding-bottom: 2.5rem;
 
@@ -96,6 +95,6 @@ h6 {
 }
 
 .h3 {
-	font-size: 3.8rem;
+	font-size: 2rem;
 	padding: 1rem 0;
 }

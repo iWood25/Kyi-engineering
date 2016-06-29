@@ -15,21 +15,29 @@ $highDefinition: 1920px;
 // -------------------------
 
 $white:						#fff;
-$concrete:				#f3f3f3;
-$gallery:					#f0f0f0;
-$alabaster:				#f8f8f8;
-$gallery:					#efefef;
-$alto:						#ddd;
-$silver:					#c0c0c0;
-$dustyGray:				#979797;
-$doveGray:				#6c6c6c;
-$mirage:					#1a2631;
+$whisper:					#e4e4e4;
+$zambezi:					#5d5d5d;
+$silver:					#bbb;
 $black:						#000;
+$nero:						#1c1c1c;
+$GunPowder:				#505051;
+$casablanca:			#F3B55F;
 
 // content colors
-$colorHeading: $mirage;
-$colorText: $doveGray;
-$colorLinkHover: lighten( $mirage, 30% );
+$colorHeading: $black;
+$colorText: $black;
+$colorLink: $white;
+$colorLinkHover: lighten( $casablanca, 0% );
+
+
+// overlayColor
+// -------------------------
+
+$topLineOverColor: lighten( $black, 66% );
+$headerOverColor: lighten( $nero, 38% );
+$workingBgTopOverColor: lighten( $GunPowder, 46% );
+$workingBgBottomOverColor: lighten( $nero, 25% );
+
 
 // Paths
 // -------------------------
@@ -59,7 +67,6 @@ $lineHeightBase: 1.55;
 // -------------------------
 
 $borderWhite: 3px solid $white;
-$borderBlack: 2px solid $black;
 
 // Indents
 // --------------------------------------------------
