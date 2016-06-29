@@ -48,10 +48,14 @@ $pathTo_Fonts: "../font/";
 // -------------------------
 
 $fontBase: Arial, Geneva, Helvetica, sans-serif;
-$fontBaron: Baron, Geneva, Verdana, sans-serif;
+$OpenSansBold: OpenSansBold, Geneva, Verdana, sans-serif;
+$OpenSansLight: OpenSansLight, Geneva, Verdana, sans-serif;
+$OpenSansRegular: OpenSansRegular, Geneva, Verdana, sans-serif;
+$OpenSansSemiBold: OpenSansSemiBold, Geneva, Verdana, sans-serif;
+
 
 // font heading
-$fontHeading: $fontBaron;
+$fontHeading: $OpenSansSemiBold;
 
 // Font sizes
 // -------------------------

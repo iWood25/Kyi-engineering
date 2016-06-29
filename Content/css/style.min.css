@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: Baron, Geneva, Verdana, sans-serif;
+  font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif;
   margin: 0;
   text-align: center;
   letter-spacing: normal; }
@@ -299,8 +299,26 @@ h6 {
   cursor: pointer; }
 
 @font-face {
-  font-family: "Baron";
-  src: url("../font/baron/baron-regular.woff") format("woff"), url("../font/baron/baron-regular.ttf") format("truetype");
+  font-family: "OpenSansBold";
+  src: url("../font/OpenSansBold/OpenSansBold.woff") format("woff"), url("../font/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../font/OpenSansLight/OpenSansLight.woff") format("woff"), url("../font/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../font/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../font/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../font/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../font/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -313,7 +331,7 @@ ol {
 
 /* line 14, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_list.scss */
 .list {
-  font-family: Baron, Geneva, Verdana, sans-serif;
+  font-family: OpenSansRegular, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   line-height: 1.55; }
 
@@ -325,7 +343,7 @@ textarea {
   box-shadow: none;
   color: #000;
   display: block;
-  font-family: Baron, Geneva, Verdana, sans-serif;
+  font-family: OpenSansRegular, Geneva, Verdana, sans-serif;
   font-size: 1.4rem;
   letter-spacing: 1px;
   padding: 2.4rem 3.4rem;
@@ -1015,7 +1033,3 @@ textarea {
     .container-secondary {
       padding-left: 0.75rem;
       padding-right: 0.75rem; } }
-
-/* line 11, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
-.bg {
-  background-color: #a8a8a8; }
