@@ -1,0 +1,23 @@
+{
+  "name": "start_html",
+  "homepage": "",
+  "authors": [],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "normalize-css": "normalize.css#^3.0.3",
+    "jquery": "^2.2.2",
+    "jquery.scrollTo": "^2.1.2",
+    "font-awesome": "^4.5.0"
+  }
+}
