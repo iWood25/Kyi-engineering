@@ -1,6 +1,16 @@
 ﻿$(document).ready(function () {
 
-	$(".header").css("min-height", $(window).height());
+
+	//when resizing height header = height window 
+
+	function heightDetect() {
+		$(".header").css("height", $(window).height());
+	};
+
+	heightDetect();
+	$(window).resize(function () {
+		heightDetect();
+	});
 
 })
 
