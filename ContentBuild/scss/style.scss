@@ -8,9 +8,17 @@
 // Redefinition
 // --------------------------------------------------
 
+section, .header{
+	position: relative;
+}
 
-// Content
+
+// header
 // --------------------------------------------------
+.header{
+	min-height: 62rem;
+	background-color: $headerBgColor;
+}
 
 
 // Footer
