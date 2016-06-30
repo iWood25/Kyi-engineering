@@ -18,6 +18,7 @@ $white:						#fff;
 $whisper:					#e4e4e4;
 $zambezi:					#5d5d5d;
 $silver:					#bbb;
+$nobel:						#A2A2A2;
 $black:						#000;
 $nero:						#1c1c1c;
 $GunPowder:				#505051;
@@ -28,6 +29,7 @@ $colorHeading: $black;
 $colorText: $black;
 $colorLink: $white;
 $colorLinkHover: lighten( $casablanca, 0% );
+$colorSocial: $nobel;
 
 
 // overlayColor
@@ -82,3 +84,8 @@ $containerIndent: 1.5rem;
 
 $container: 117rem + $containerIndent * 2;
 $containerSecondary: 96.8rem + $containerIndent * 2;
+
+
+// Footer height
+// --------------------------------------------------
+$footer-height: 12rem;
