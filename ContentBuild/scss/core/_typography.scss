@@ -30,7 +30,7 @@ body {
 	font-size: $fontSizeBase;
 	line-height: $lineHeightBase;
 	-webkit-font-smoothing: antialiased; // font rendering
-	letter-spacing: 2.3px;
+	letter-spacing: normal;
 
 	@include maxScreen($large) {
 		line-height: 1.8;
@@ -70,6 +70,7 @@ a,
 	color: $colorLink;
 	text-decoration: none;
 	transition: color .2s linear;
+	font-family: $OpenSansRegular;
 
 	&:hover,
 	&:focus {

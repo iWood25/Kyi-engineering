@@ -16,21 +16,90 @@ section, .header {
 // header
 // --------------------------------------------------
 
+
+
 .header {
 	min-height: 62rem;
 	padding-top: 5rem;
 	background-color: $headerOverColor;
 }
 
+.top-line__header{
+	background-color: $topLineOverColor;
+	line-height: 0;
+}
+
 .header__logo{
+	display: inline-block;
+	line-height: 0;
+
 		svg {
 		width: 19.5rem;
 		height: 5.9rem;
-		opacity: .9;
+		opacity: .8;
 		transition: opacity .2s ease-out;
+
 		&:hover{
 			opacity: 1;
 		}
+	}
+}
+
+.header__menu {
+	padding: 1.6rem 5rem 0;
+	text-align: justify;
+	font-size: 0;
+
+	&:after {
+		display: inline-block;
+		content: "";
+		width: 100%;
+		height: 0;
+	}
+}
+
+.menu__item {
+	display: inline-block;
+}
+
+
+.menu__link {
+	display: block;
+	padding: 0.6rem;
+}
+
+.menu__link-text {
+	@extend .list;
+	text-transform: uppercase;
+	transition: all .2s ease-out;
+
+	&:hover{
+		border-bottom: 1px solid $casablanca;
+	}
+}
+
+.header__phone{
+	color: $white;
+	font-family: $OpenSansSemiBold;
+	font-size: 1.8rem;
+	line-height: 2.2;
+	.fa{
+		font-size: 3rem;
+		position: relative;
+		top: .4rem;
+		margin-right: .5rem;
+	}
+}
+
+.header__callback{
+	color: $whisper;
+	font-size: 1.2rem;
+	line-height: 1.25;
+	border-bottom: 1px dashed $whisper;
+	transition: all .2s ease-out;
+
+	&:hover{
+		border-bottom: 1px solid $casablanca;
 	}
 }
 
@@ -56,7 +125,6 @@ section, .header {
 		}
 	}
 }
-
 
 .footer__social {
 	padding: .9rem 0;

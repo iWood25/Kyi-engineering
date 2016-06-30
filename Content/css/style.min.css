@@ -23,7 +23,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 2.3px; }
+  letter-spacing: normal; }
   @media screen and (max-width: 1024px) {
     /* line 25, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
     body {
@@ -54,8 +54,9 @@ a,
 .link {
   color: #fff;
   text-decoration: none;
-  transition: color .2s linear; }
-  /* line 74, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+  transition: color .2s linear;
+  font-family: OpenSansRegular, Geneva, Verdana, sans-serif; }
+  /* line 75, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
   a:hover, a:focus,
   .link:hover,
   .link:focus {
@@ -63,16 +64,16 @@ a,
     outline: 0;
     text-decoration: none; }
 
-/* line 85, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+/* line 86, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 img {
   vertical-align: middle;
   max-width: 100%; }
 
-/* line 96, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+/* line 97, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 p {
   margin: 0; }
 
-/* line 103, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+/* line 104, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 h1,
 h2,
 h3,
@@ -85,22 +86,22 @@ h6 {
   text-align: center;
   letter-spacing: normal; }
 
-/* line 116, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+/* line 117, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 .h2 {
   font-size: 2.4rem;
   padding-top: 4rem;
   padding-bottom: 2.5rem; }
   @media screen and (max-width: 1024px) {
-    /* line 116, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+    /* line 117, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
     .h2 {
       font-size: 3.5rem; } }
 
-/* line 126, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+/* line 127, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 .h3 {
   font-size: 2rem;
   padding: 1rem 0; }
 
-/* line 134, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
+/* line 135, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 svg {
   position: relative; }
 
@@ -384,7 +385,7 @@ ol {
   padding: 0; }
 
 /* line 14, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_list.scss */
-.list {
+.list, .menu__link-text {
   font-family: OpenSansRegular, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   line-height: 1.55; }
@@ -1092,64 +1093,126 @@ textarea {
 section, .header {
   position: relative; }
 
-/* line 19, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 21, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .header {
   min-height: 62rem;
   padding-top: 5rem;
   background-color: rgba(0, 0, 0, 0.55); }
 
-/* line 26, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
-.header__logo svg {
-  width: 19.5rem;
-  height: 5.9rem;
-  opacity: .9;
-  transition: opacity .2s ease-out; }
-  /* line 31, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
-  .header__logo svg:hover {
-    opacity: 1; }
+/* line 27, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.top-line__header {
+  background-color: rgba(0, 0, 0, 0.55);
+  line-height: 0; }
 
-/* line 41, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 32, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.header__logo {
+  display: inline-block;
+  line-height: 0; }
+  /* line 36, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  .header__logo svg {
+    width: 19.5rem;
+    height: 5.9rem;
+    opacity: .8;
+    transition: opacity .2s ease-out; }
+    /* line 42, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    .header__logo svg:hover {
+      opacity: 1; }
+
+/* line 48, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.header__menu {
+  padding: 1.6rem 5rem 0;
+  text-align: justify;
+  font-size: 0; }
+  /* line 53, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  .header__menu:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 0; }
+
+/* line 61, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.menu__item {
+  display: inline-block; }
+
+/* line 66, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.menu__link {
+  display: block;
+  padding: 0.6rem; }
+
+/* line 71, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.menu__link-text {
+  text-transform: uppercase;
+  transition: all .2s ease-out; }
+  /* line 76, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  .menu__link-text:hover {
+    border-bottom: 1px solid #F3B55F; }
+
+/* line 81, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.header__phone {
+  color: #fff;
+  font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2; }
+  /* line 86, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  .header__phone .fa {
+    font-size: 3rem;
+    position: relative;
+    top: .4rem;
+    margin-right: .5rem; }
+
+/* line 94, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.header__callback {
+  color: #e4e4e4;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  border-bottom: 1px dashed #e4e4e4;
+  transition: all .2s ease-out; }
+  /* line 101, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  .header__callback:hover {
+    border-bottom: 1px solid #F3B55F; }
+
+/* line 110, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .footer {
   background-color: #000;
   padding: 3rem 0; }
 
-/* line 46, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 115, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .footer__logo {
   display: inline-block; }
-  /* line 49, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 118, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .footer__logo svg {
     width: 19.5rem;
     height: 5.9rem;
     opacity: .7;
     transition: opacity .2s ease-out; }
-    /* line 54, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 123, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .footer__logo svg:hover {
       opacity: 1; }
 
-/* line 61, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 129, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .footer__social {
   padding: .9rem 0;
   text-align: right;
   vertical-align: middle;
   min-height: 5.9rem; }
-  /* line 67, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 135, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .footer__social::after {
     display: inline-block; }
 
-/* line 72, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 140, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .social__item {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   width: 4rem; }
 
-/* line 79, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 147, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .social__link {
   line-height: 4rem;
   font-size: 2.2rem;
   color: #A2A2A2;
   transition: all 0.2s ease-out; }
-  /* line 85, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 153, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .social__link:hover {
     color: #fff;
     font-size: 3rem; }
