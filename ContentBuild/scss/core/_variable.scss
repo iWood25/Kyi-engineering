@@ -35,10 +35,10 @@ $colorSocial: $nobel;
 // overlayColor
 // -------------------------
 
-$topLineOverColor: lighten( $black, 66% );
-$headerOverColor: lighten( $nero, 38% );
-$workingBgTopOverColor: lighten( $GunPowder, 46% );
-$workingBgBottomOverColor: lighten( $nero, 25% );
+$topLineOverColor: rgba($black,.62);
+$headerOverColor: rgba($black,.55);
+$workingBgTopOverColor: rgba($GunPowder,.46);
+$workingBgBottomOverColor: rgba($nero,.25);
 
 // backgroundColor
 // -------------------------

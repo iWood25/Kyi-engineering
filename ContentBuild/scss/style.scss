@@ -8,69 +8,82 @@
 // Redefinition
 // --------------------------------------------------
 
-section, .header{
+section, .header {
 	position: relative;
 }
 
 
 // header
 // --------------------------------------------------
-.header{
+
+.header {
 	min-height: 62rem;
-	background-color: $headerBgColor;
+	padding-top: 5rem;
+	background-color: $headerOverColor;
+}
+
+.header__logo{
+		svg {
+		width: 19.5rem;
+		height: 5.9rem;
+		opacity: .9;
+		transition: opacity .2s ease-out;
+		&:hover{
+			opacity: 1;
+		}
+	}
 }
 
 
 // Footer
 // --------------------------------------------------
 
-.footer{
+.footer {
 	background-color: $black;
 	padding: 3rem 0;
 }
 
-.footer__logo{
+.footer__logo {
 	display: inline-block;
-}
 
-.logo__pic{
-	display: block;
-	max-width: 19.6rem;
-	max-height: 5.9rem;
-	opacity: .7;
-	transition: opacity 0.2s ease-out;
-
-	&:hover{
-		opacity: 1;
+	svg {
+		width: 19.5rem;
+		height: 5.9rem;
+		opacity: .7;
+		transition: opacity .2s ease-out;
+		&:hover{
+			opacity: 1;
+		}
 	}
 }
 
-.footer__social{
+
+.footer__social {
 	padding: .9rem 0;
 	text-align: right;
 	vertical-align: middle;
 	min-height: 5.9rem;
-	&::after{
+
+	&::after {
 		display: inline-block;
 	}
 }
 
-.social__item{
+.social__item {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 	width: 4rem;
 }
 
-.social__link{
+.social__link {
 	line-height: 4rem;
 	font-size: 2.2rem;
 	color: $colorSocial;
 	transition: all 0.2s ease-out;
 
-	&:hover{
+	&:hover {
 		color: $white;
 		font-size: 3rem;
 	}
 }
-
