@@ -24,29 +24,28 @@ section, .header {
 	background-color: $headerOverColor;
 }
 
-.top-line__header{
+.top-line__header {
 	background-color: $topLineOverColor;
 	line-height: 0;
 }
 
-.header__logo{
+.header__logo {
 	display: inline-block;
 	line-height: 0;
 
-		svg {
+	svg {
 		width: 19.5rem;
 		height: 5.9rem;
-		opacity: .8;
+		opacity: .9;
 		transition: opacity .2s ease-out;
 
-		&:hover{
+		&:hover {
 			opacity: 1;
 		}
 	}
 }
 
 .header__menu {
-	padding: 1.6rem 5rem 0;
 	text-align: justify;
 	font-size: 0;
 
@@ -64,26 +63,22 @@ section, .header {
 
 
 .menu__link {
-	display: block;
-	padding: 0.6rem;
-}
-
-.menu__link-text {
-	@extend .list;
+	line-height: 1.5;
+	font-size: 1.3rem;
 	text-transform: uppercase;
-	transition: all .2s ease-out;
-
-	&:hover{
-		border-bottom: 1px solid $casablanca;
-	}
+	display: block;
+	padding: 2.1rem 3rem;
 }
 
-.header__phone{
+
+.header__phone {
 	color: $white;
 	font-family: $OpenSansSemiBold;
 	font-size: 1.8rem;
 	line-height: 2.2;
-	.fa{
+
+	.fa {
+		color: $casablanca;
 		font-size: 3rem;
 		position: relative;
 		top: .4rem;
@@ -91,15 +86,16 @@ section, .header {
 	}
 }
 
-.header__callback{
-	color: $whisper;
+.header__callback {
+	color: lighten( $colorHeading, 80% );
 	font-size: 1.2rem;
 	line-height: 1.25;
-	border-bottom: 1px dashed $whisper;
+	border-bottom: .1rem dashed lighten( $colorHeading, 85% );
 	transition: all .2s ease-out;
 
-	&:hover{
-		border-bottom: 1px solid $casablanca;
+	&:hover {
+		color: $white;
+		border-color: transparent;
 	}
 }
 
@@ -120,7 +116,8 @@ section, .header {
 		height: 5.9rem;
 		opacity: .7;
 		transition: opacity .2s ease-out;
-		&:hover{
+
+		&:hover {
 			opacity: 1;
 		}
 	}
@@ -145,10 +142,11 @@ section, .header {
 }
 
 .social__link {
-	line-height: 4rem;
+	line-height: 4.1rem;
 	font-size: 2.2rem;
 	color: $colorSocial;
 	transition: all 0.2s ease-out;
+
 
 	&:hover {
 		color: $white;
