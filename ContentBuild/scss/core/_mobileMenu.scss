@@ -1,0 +1,47 @@
+﻿// mobile menu
+// --------------------------------------------------
+
+.toggle-menu {
+	width: 6rem;
+	height: 6rem;
+	float: right;
+	position: relative;
+	border: none;
+	background-color: $MobMnuBgColor;
+	z-index: 250;
+}
+
+.mobile__menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, .8);
+	z-index: 150;
+	display: none;
+}
+
+.mobile__menu-list, .mobile__menu-item {
+	display: block;
+	line-height: 2.2;
+	font-size: 1.4rem;
+}
+
+.mobile__menu-list {
+	margin-top: 18rem;
+	text-align: center;
+}
+
+.mobile__menu-link {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 2rem 0;
+	letter-spacing: .3rem;
+}
+
+.mobile__menu-item {
+	&:hover {
+		background-color: rgba(255,255,255,.1);
+	}
+}

@@ -266,3 +266,21 @@
 	cursor: pointer;
 }
 
+
+// Hidden
+// -------------------------
+.mobile-hidden {
+  display: block;
+
+  @include maxScreen($large) {
+   display: none;
+  }
+}
+
+.mobile-visible {
+  display: none;
+
+  @include maxScreen($large) {
+   display: block;
+  }
+}

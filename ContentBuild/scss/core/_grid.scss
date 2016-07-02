@@ -172,6 +172,95 @@ $gridColumns: 12;
 	width: 100%;
 }
 
+// Push and pull columns for source order changes
+.SPush1 {
+	left: percentage((1 / $gridColumns));
+}
+
+.SPush2 {
+	left: percentage((2 / $gridColumns));
+}
+
+.SPush3 {
+	left: percentage((3 / $gridColumns));
+}
+
+.SPush4 {
+	left: percentage((4 / $gridColumns));
+}
+
+.SPush5 {
+	left: percentage((5 / $gridColumns));
+}
+
+.SPush6 {
+	left: percentage((6 / $gridColumns));
+}
+
+.SPush7 {
+	left: percentage((7 / $gridColumns));
+}
+
+.SPush8 {
+	left: percentage((8 / $gridColumns));
+}
+
+.SPush9 {
+	left: percentage((9 / $gridColumns));
+}
+
+.SPush10 {
+	left: percentage((10/ $gridColumns));
+}
+
+.SPush11 {
+	left: percentage((11/ $gridColumns));
+}
+
+.SPull1 {
+	right: percentage((1 / $gridColumns));
+}
+
+.SPull2 {
+	right: percentage((2 / $gridColumns));
+}
+
+.SPull3 {
+	right: percentage((3 / $gridColumns));
+}
+
+.SPull4 {
+	right: percentage((4 / $gridColumns));
+}
+
+.SPull5 {
+	right: percentage((5 / $gridColumns));
+}
+
+.SPull6 {
+	right: percentage((6 / $gridColumns));
+}
+
+.SPull7 {
+	right: percentage((7 / $gridColumns));
+}
+
+.SPull8 {
+	right: percentage((8 / $gridColumns));
+}
+
+.SPull9 {
+	right: percentage((9 / $gridColumns));
+}
+
+.SPull10 {
+	right: percentage((10/ $gridColumns));
+}
+
+.SPull11 {
+	right: percentage((11/ $gridColumns));
+}
+
 // Medium grid
 // -------------------------
 
