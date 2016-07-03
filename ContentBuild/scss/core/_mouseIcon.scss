@@ -1,0 +1,66 @@
+﻿/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+.mouse-icon {
+	border: 2px solid #fff;
+	border-radius: 16px;
+	height: 40px;
+	width: 24px;
+	display: inline-block;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.mouse-icon .wheel {
+	animation-name: drop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+	position: relative;
+	border-radius: 10px;
+	background: #fff;
+	width: 2px;
+	height: 6px;
+	top: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@-webkit-keyframes drop {
+	0% {
+		top: 5px;
+		opacity: 0;
+	}
+
+	30% {
+		top: 10px;
+		opacity: 1;
+	}
+
+	100% {
+		top: 25px;
+		opacity: 0;
+	}
+}
+
+@keyframes drop {
+	0% {
+		top: 5px;
+		opacity: 0;
+	}
+
+	30% {
+		top: 10px;
+		opacity: 1;
+	}
+
+	100% {
+		top: 25px;
+		opacity: 0;
+	}
+}

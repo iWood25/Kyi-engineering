@@ -26,6 +26,7 @@ $casablanca:			#F3B55F;
 $black:						#000;
 
 // content colors
+$colorTitle: $white;
 $colorHeading: $black;
 $colorText: $black;
 $colorLink: $white;
@@ -79,7 +80,7 @@ $lineHeightBase: 1.55;
 // Borders
 // -------------------------
 
-$borderWhite: 3px solid $white;
+$borderWhite: .8rem solid $white;
 
 // Indents
 // --------------------------------------------------

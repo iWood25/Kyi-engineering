@@ -9,6 +9,15 @@
 	border: none;
 	background-color: $MobMnuBgColor;
 	z-index: 250;
+	span{
+		display:block;
+	}
+
+	@include maxScreen($middle) {
+		width: 5rem;
+		height: 5rem;
+	}
+
 }
 
 .mobile__menu {
@@ -24,7 +33,6 @@
 
 .mobile__menu-list, .mobile__menu-item {
 	display: block;
-	line-height: 2.2;
 	font-size: 1.4rem;
 }
 
@@ -36,12 +44,15 @@
 .mobile__menu-link {
 	display: inline-block;
 	text-transform: uppercase;
-	padding: 2rem 0;
+	padding: 4rem 5rem;
 	letter-spacing: .3rem;
 }
 
 .mobile__menu-item {
+	transition: all ease-out 0.5s;
+	
 	&:hover {
-		background-color: rgba(255,255,255,.1);
+		
+		background-color: rgba(0,0,0,.7);
 	}
 }

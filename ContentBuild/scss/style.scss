@@ -20,12 +20,21 @@ section, .header {
 .header {
 	min-height: 62rem;
 	padding-top: 5rem;
-	background-color: $headerOverColor;
+
+	@include maxScreen($middle) {
+		padding-top: 2rem;
+	}
+
 }
 
 .top-line__header {
 	background-color: $topLineOverColor;
 	line-height: 0;
+	z-index: 2;
+
+	@include maxScreen($middle) {
+		padding: 0.4rem 0;
+	}
 }
 
 .header__logo {
@@ -40,6 +49,11 @@ section, .header {
 
 		&:hover {
 			opacity: 1;
+		}
+
+		@include maxScreen($middle) {
+			width: 16rem;
+			height: 5rem;
 		}
 	}
 }
@@ -79,6 +93,11 @@ section, .header {
 	}
 }
 
+.wrapper-phone {
+	@include maxScreen($middle) {
+		text-align: center;
+	}
+}
 
 .header__phone {
 	color: $white;
@@ -92,6 +111,14 @@ section, .header {
 		position: relative;
 		top: .4rem;
 		margin-right: .5rem;
+
+		@include maxScreen($small) {
+			font-size: 2.5rem;
+		}
+	}
+
+	@include maxScreen($small) {
+		font-size: 1.5rem;
 	}
 }
 
@@ -99,14 +126,67 @@ section, .header {
 	color: lighten( $colorHeading, 80% );
 	font-size: 1.2rem;
 	line-height: 1.25;
-	border-bottom: .1rem dashed lighten( $colorHeading, 85% );
+	border-bottom: .1rem dotted lighten( $colorHeading, 85% );
 	transition: all .2s ease-out;
 
 	&:hover {
 		color: $white;
 		border-color: transparent;
 	}
+
+	@include maxScreen($middle) {
+		font-size: 1.1rem;
+	}
 }
+
+	//title alignment
+.wrapper_section-title{
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	.section-title_descr{
+		display: table-row;
+
+		.section-title_centered{
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+
+.title{
+	display: inline-block;
+	padding: 1rem 3.5rem;
+	color: $colorTitle;
+	border: $borderWhite;
+	text-transform: uppercase;
+	max-width: 55.5rem;
+	font-size: 3rem;
+	background-color: $headerOverColor;
+	box-shadow: rgba($black,.4) 0 0 0 100rem;
+
+	@include maxScreen($middle) {
+		font-size: 2.5rem;
+	}
+	@include maxScreen($small) {
+		font-size: 2.2rem;
+	}
+}
+
+.wrapper_mouse-icon{
+	position:absolute;
+	left: 0;
+	right: 0;
+	bottom: 8rem;
+	z-index:2;
+}
+
 
 // Footer
 // --------------------------------------------------
