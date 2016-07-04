@@ -63,6 +63,9 @@ $OpenSansLight: OpenSansLight, Geneva, Verdana, sans-serif;
 $OpenSansRegular: OpenSansRegular, Geneva, Verdana, sans-serif;
 $OpenSansSemiBold: OpenSansSemiBold, Geneva, Verdana, sans-serif;
 
+// Font families button
+// -------------------------
+$fonntFamiliBtn: $OpenSansSemiBold;
 
 // font heading
 $fontHeading: $OpenSansSemiBold;
@@ -80,7 +83,7 @@ $lineHeightBase: 1.55;
 // Borders
 // -------------------------
 
-$borderWhite: .8rem solid $white;
+$borderWhite: .7rem solid $white;
 
 // Indents
 // --------------------------------------------------

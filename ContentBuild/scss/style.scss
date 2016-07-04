@@ -166,16 +166,18 @@ section, .header {
 	color: $colorTitle;
 	border: $borderWhite;
 	text-transform: uppercase;
-	max-width: 55.5rem;
+	max-width: 55rem;
 	font-size: 3rem;
 	background-color: $headerOverColor;
 	box-shadow: rgba($black,.4) 0 0 0 100rem;
 
 	@include maxScreen($middle) {
 		font-size: 2.5rem;
+		border: .5rem solid $white;
 	}
 	@include maxScreen($small) {
 		font-size: 2.2rem;
+		border: .4rem solid $white;
 	}
 }
 
@@ -183,10 +185,19 @@ section, .header {
 	position:absolute;
 	left: 0;
 	right: 0;
-	bottom: 8rem;
+	bottom: 8%;
 	z-index:2;
 }
 
+.btn{
+	font-family: $fonntFamiliBtn;
+	margin-top: 6%;
+
+	@include maxScreen($small) {
+		margin-top: 13%;
+	}
+	
+}
 
 // Footer
 // --------------------------------------------------
