@@ -19,7 +19,8 @@
     "html5shiv": "^3.7.3",
     "magnific-popup": "^1.1.0",
     "mixitup": "^2.1.11",
-    "waypoints": "^4.0.0"
+    "waypoints": "^4.0.0",
+    "equalHeights": "*"
   },
   "dependencies": {
     "normalize-css": "normalize.css#^3.0.3",

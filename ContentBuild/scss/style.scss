@@ -16,15 +16,14 @@ section, .header {
 // header
 // --------------------------------------------------
 
-
 .header {
+	background-color: $headerOverColor;
 	min-height: 62rem;
 	padding-top: 5rem;
 
 	@include maxScreen($middle) {
 		padding-top: 2rem;
 	}
-
 }
 
 .top-line__header {
@@ -139,8 +138,8 @@ section, .header {
 	}
 }
 
-	//title alignment
-.wrapper_section-title{
+//title alignment
+.wrapper_section-title {
 	display: table;
 	width: 100%;
 	height: 100%;
@@ -149,10 +148,10 @@ section, .header {
 	left: 0;
 	z-index: 1;
 
-	.section-title_descr{
+	.section-title_descr {
 		display: table-row;
 
-		.section-title_centered{
+		.section-title_centered {
 			display: table-cell;
 			text-align: center;
 			vertical-align: middle;
@@ -160,7 +159,7 @@ section, .header {
 	}
 }
 
-.title{
+.title {
 	display: inline-block;
 	padding: 1rem 3.5rem;
 	color: $colorTitle;
@@ -169,35 +168,144 @@ section, .header {
 	max-width: 55rem;
 	font-size: 3rem;
 	background-color: $headerOverColor;
-	box-shadow: rgba($black,.4) 0 0 0 100rem;
+	animation-delay: 1s;
 
 	@include maxScreen($middle) {
 		font-size: 2.5rem;
 		border: .5rem solid $white;
 	}
+
 	@include maxScreen($small) {
 		font-size: 2.2rem;
 		border: .4rem solid $white;
 	}
 }
 
-.wrapper_mouse-icon{
-	position:absolute;
+.wrapper_mouse-icon {
+	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 8%;
-	z-index:2;
+	z-index: 2;
 }
 
-.btn{
+.btn {
 	font-family: $fonntFamiliBtn;
 	margin-top: 6%;
+	animation-delay: 1.4s;
 
 	@include maxScreen($small) {
 		margin-top: 13%;
 	}
-	
 }
+
+.mouse-icon {
+	animation-delay: 1.8s;
+}
+
+
+// Section_about
+// --------------------------------------------------
+
+.section_about {
+	padding: 7rem 0 5rem;
+	background-color: $sectBgColor;
+}
+
+.hr {
+	margin-bottom: 3rem;
+}
+
+
+.cards {
+	text-align: center;
+	perspective: 60rem;
+
+	.card {
+		width: 26rem;
+		display: inline-block;
+		background-color: $colorBgCard;
+		margin: 0 1.2rem;
+		color: $colorTitle;
+		font-size: 1.5rem;
+		line-height: 2.2rem;
+		padding: 5.4rem 2.8rem 4.5rem;
+		vertical-align: top;
+		border-bottom: $borderCard;
+		transition: all 1.2s ease;
+
+		@include maxScreen($large) {
+			margin-bottom: 2rem;
+		}
+
+		&:hover {
+			border-bottom: $borderCardHover;
+
+			.card__icon {
+				transform: scale(1.1);
+			}
+		}
+
+		&-on {
+			opacity: 1;
+		}
+
+		&-off {
+			transform: rotateY(120deg);
+			opacity: 0;
+		}
+
+		.card__icon {
+			width: 12rem;
+			height: 12rem;
+			line-height: 12rem;
+			display: inline-block;
+			background-color: $casablanca;
+			border-radius: 10rem;
+			text-align: center;
+			transition: all .5s ease;
+
+			.icon-text {
+				display: inline-block;
+				font-size: 5rem;
+				font-family: $OpenSansSemiBold;
+			}
+
+			.fa {
+				line-height: 12rem;
+			}
+
+			.fa-group {
+				font-size: 6rem;
+			}
+
+			.fa-clock-o {
+				font-size: 10rem;
+			}
+		}
+
+		.card__p {
+			color: $colorTextCard;
+			text-indent: unset;
+			margin-bottom: 0;
+
+			.sale {
+				font-family: $OpenSansSemiBold;
+				color: $casablanca;
+			}
+		}
+
+		.h4 {
+			margin-top: 3rem;
+			margin-bottom: 1.8rem;
+		}
+	}
+}
+
+
+
+
+
 
 // Footer
 // --------------------------------------------------

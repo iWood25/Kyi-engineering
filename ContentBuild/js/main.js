@@ -1,5 +1,11 @@
 ﻿$(document).ready(function () {
 
+	// Animate CSS
+
+	$(".title").animated("fadeInDown");
+	$(".btn").animated("fadeInUp");
+	$(".mouse-icon, .contant__title").animated("fadeInUp");
+
 
 	//when resizing height header = height window 
 
@@ -11,6 +17,8 @@
 	$(window).resize(function () {
 		heightDetect();
 	});
+
+
 
 	// create mobile menu
 
@@ -44,9 +52,27 @@
 			$(".mobile__menu li a").addClass("fadeInUp animated");
 		};
 	});
-	
 
-})
+
+
+	// Equal Heights
+	$(".card").equalHeights();
+
+
+	// Way points
+	$(".contant__title").waypoint(function () {
+		$(".card").each(function (index) {
+			var ths = $(this);
+			setInterval(function () {
+				ths.removeClass("card-off").addClass("card-on");
+			}, 150 * index);
+		});
+	}, {
+		offset: "5%"
+	});
+
+
+});
 
 $(window).load(function () {
 	$(".loader-inner").fadeOut();

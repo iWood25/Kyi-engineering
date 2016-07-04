@@ -12,7 +12,45 @@ ol {
 
 // styled checklists
 .list {
-	font-family: $OpenSansRegular;
-	font-size: 1.2rem;
+	font-family: $OpenSansLight;
 	line-height: $lineHeightBase;
+	margin-bottom: 2rem;
+}
+
+ol {
+	counter-reset: myCounter;
+	text-indent: 5rem;
+
+	@include maxScreen($small) {
+		text-indent: unset;
+	}
+
+	li {
+		list-style: none;
+
+		@include maxScreen($large) {
+			margin-bottom: 1.3rem;
+		}
+	}
+
+	li:before {
+		counter-increment: myCounter;
+		content: counter(myCounter);
+		color: white;
+		background: $casablanca;
+		border-radius: 5rem;
+		display: inline-block;
+		text-align: center;
+		margin: .5rem 1rem;
+		line-height: 4rem;
+		width: 4rem;
+		height: 4rem;
+		text-indent: 0;
+
+		@include maxScreen($large) {
+			line-height: 3rem;
+			width: 3rem;
+			height: 3rem;
+		}
+	}
 }

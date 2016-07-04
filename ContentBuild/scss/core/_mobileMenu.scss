@@ -9,15 +9,15 @@
 	border: none;
 	background-color: $MobMnuBgColor;
 	z-index: 250;
-	span{
-		display:block;
+
+	span {
+		display: block;
 	}
 
 	@include maxScreen($middle) {
 		width: 5rem;
 		height: 5rem;
 	}
-
 }
 
 .mobile__menu {
@@ -50,9 +50,21 @@
 
 .mobile__menu-item {
 	transition: all ease-out 0.5s;
-	
+
+	&:nth-child(1) a {
+		animation-duration: .5s;
+	}
+	&:nth-child(2) a {
+		animation-duration: 1s;
+	}
+	&:nth-child(3) a {
+		animation-duration: 1.5s;
+	}
+	&:nth-child(4) a {
+		animation-duration: 2s;
+	}
+
 	&:hover {
-		
 		background-color: rgba(0,0,0,.7);
 	}
 }

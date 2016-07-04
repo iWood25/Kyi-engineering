@@ -95,18 +95,19 @@ img {
 // -------------------------
 
 p {
-	margin: 0;
+	text-indent: 5rem;
+	font-family: $OpenSansLight;
+
+	@include maxScreen($middle) {
+		text-indent: unset;
+	}
 }
 
 // Headings
 // -------------------------
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
 	color: $colorHeading;
 	font-family: $fontHeading;
 	margin: 0;
@@ -115,18 +116,31 @@ h6 {
 }
 
 .h2 {
-	font-size: 2.4rem;
-	padding-top: 4rem;
-	padding-bottom: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-size: 2.2rem;
+	margin-bottom: 2rem;
 
-	@include maxScreen($large) {
-		font-size: 3.5rem;
+	@include maxScreen($small) {
+		font-size: 2rem;
 	}
 }
 
 .h3 {
-	font-size: 2rem;
+	font-family: $fontHeading;
+	font-size: 1.6rem;
 	padding: 1rem 0;
+	text-indent: 5rem;
+
+	@include maxScreen($small) {
+		text-indent: unset;
+	}
+}
+
+.h4 {
+	font-family: $fontHeading;
+	font-size: 1.8rem;
+	text-transform: uppercase;
 }
 
 // SVG
@@ -134,4 +148,12 @@ h6 {
 
 svg {
 	position: relative;
+}
+
+.hr {
+	margin: auto;
+	width: 10rem;
+	height: .3rem;
+	border: none;
+	background-color: $casablanca;
 }
