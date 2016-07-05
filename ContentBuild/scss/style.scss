@@ -190,7 +190,6 @@ section, .header {
 }
 
 .btn {
-	font-family: $fonntFamiliBtn;
 	margin-top: 6%;
 	animation-delay: 1.4s;
 
@@ -302,7 +301,17 @@ section, .header {
 	}
 }
 
+// Section button
+// --------------------------------------------------
 
+.section__button{
+	padding: 5rem 0;
+	text-align: center;
+	background-color: $colorSectBgButton;
+	.btn{
+		margin-top: 0;
+	}
+}
 
 
 
@@ -326,6 +335,10 @@ section, .header {
 
 		&:hover {
 			opacity: 1;
+
+			path+path {
+			fill: $casablanca !important;
+			}
 		}
 	}
 }
@@ -356,7 +369,7 @@ section, .header {
 
 
 	&:hover {
-		color: $white;
+		color: $casablanca;
 		font-size: 3rem;
 	}
 }

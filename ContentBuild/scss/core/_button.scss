@@ -5,19 +5,25 @@
 // Button global
 // -------------------------
 
+$colorBtn: $casablanca;
+$colorBoxShadow: darken( $colorBtn, 15%);
+$colorBtnHover: lighten($colorBtn, 5%);
+$colorTextBtn: $blackPearl;
+
 .btn {
 	border-radius: 0;
 	border: none;
-	background-color: #44749d;
-	color: $white;
+	background-color: $colorBtn;
+	color: $colorTextBtn;
 	cursor: pointer;
 	display: inline-block;
 	line-height: normal;
 	position: relative;
+	font-family: $OpenSansBold;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	box-shadow: 0 4px 0 #355c7e;
+	box-shadow: 0 3px 0 $colorBoxShadow;
 	z-index: 2;
 	transition: all .15s ease;
 
@@ -27,7 +33,7 @@
 	&:focus{
 		outline: none;
 		text-decoration: none;
-		background-color: #518abc;
+		background-color: $colorBtnHover;
 	}
 }
 

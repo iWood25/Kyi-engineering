@@ -22,9 +22,10 @@ $nobel:						#A2A2A2;
 $black:						#000;
 $nero:						#1c1c1c;
 $GunPowder:				#505051;
-$astral:					#3C678C;
+$Licorice:				#2C3949;
 $arapawa:					#2A4760;
-$casablanca:			#F3B55F;
+$casablanca:			#F39F18;
+$blackPearl:			#070C11;
 $black:						#000;
 
 // content colors
@@ -34,7 +35,7 @@ $colorText: $black;
 $colorLink: $white;
 $colorLinkHover: lighten( $casablanca, 0% );
 $colorSocial: $nobel;
-$colorTextCard: lighten( $astral, 45% ) ;
+$colorTextCard: lighten( $Licorice, 50% ) ;
 
 
 // overlayColor
@@ -51,7 +52,8 @@ $workingBgBottomOverColor: rgba($nero,.25);
 $headerBgColor: $GunPowder;
 $MobMnuBgColor: lighten( $black, 15% );
 $sectBgColor: $whisper;
-$colorBgCard: $astral;
+$colorBgCard: $Licorice;
+$colorSectBgButton: #D6D6D6;
 
 
 
@@ -90,7 +92,7 @@ $lineHeightBase: 1.55;
 // -------------------------
 
 $borderWhite: .7rem solid $white;
-$borderCard: .6rem solid $arapawa;
+$borderCard: .5rem solid darken($Licorice, 15%);
 $borderCardHover: .6rem solid $casablanca;
 
 // Indents

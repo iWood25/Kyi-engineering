@@ -3,7 +3,6 @@
 	// Animate CSS
 
 	$(".title").animated("fadeInDown");
-	$(".btn").animated("fadeInUp");
 	$(".mouse-icon, .contant__title").animated("fadeInUp");
 
 
