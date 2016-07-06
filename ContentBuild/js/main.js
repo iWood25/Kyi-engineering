@@ -2,8 +2,8 @@
 
 	// Animate CSS
 
-	$(".title").animated("fadeInDown");
-	$(".mouse-icon, .contant__title").animated("fadeInUp");
+	$(".title").animated("zoomIn");
+	$(".btn, .mouse-icon, .common__title").animated("fadeInUp");
 
 
 	//when resizing height header = height window 
@@ -16,7 +16,6 @@
 	$(window).resize(function () {
 		heightDetect();
 	});
-
 
 
 	// create mobile menu
@@ -59,16 +58,46 @@
 
 
 	// Way points
-	$(".contant__title").waypoint(function () {
+	$(".cards").waypoint(function () {
 		$(".card").each(function (index) {
 			var ths = $(this);
 			setInterval(function () {
 				ths.removeClass("card-off").addClass("card-on");
-			}, 150 * index);
+			}, 250 * index);
 		});
 	}, {
-		offset: "5%"
+		offset: "80%"
 	});
+
+
+	// Way points
+	$(".arrows").waypoint(function () {
+		$(".arrow").each(function (index) {
+			var ths = $(this);
+			setTimeout(function () {
+				var myAnimation = new DrawFillSVG({
+					elementId: "arrow__svg"+index
+				});
+			}, 800 * index);
+		});
+	}, {
+		offset: "80%"
+	});
+
+
+
+
+
+
+	//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if ($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch (err) {
+
+	};
 
 
 });

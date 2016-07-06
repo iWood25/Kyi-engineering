@@ -7,7 +7,7 @@
 
 $colorBtn: $casablanca;
 $colorBoxShadow: darken( $colorBtn, 15%);
-$colorBtnHover: lighten($colorBtn, 5%);
+$colorBtnHover: lighten($colorBtn, 12%);
 $colorTextBtn: $blackPearl;
 
 .btn {
@@ -25,7 +25,7 @@ $colorTextBtn: $blackPearl;
 	text-transform: uppercase;
 	box-shadow: 0 3px 0 $colorBoxShadow;
 	z-index: 2;
-	transition: all .15s ease;
+	transition: all .25s ease;
 
 	
 	&:hover,

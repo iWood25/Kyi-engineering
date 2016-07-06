@@ -36,13 +36,14 @@ $colorLink: $white;
 $colorLinkHover: lighten( $casablanca, 0% );
 $colorSocial: $nobel;
 $colorTextCard: lighten( $Licorice, 50% ) ;
+$colorTextArrow: $white;
 
 
 // overlayColor
 // -------------------------
 
 $topLineOverColor: rgba($black,.55);
-$headerOverColor: rgba($black,.3);
+$headerOverColor: rgba($blackPearl,.3);
 $workingBgTopOverColor: rgba($GunPowder,.46);
 $workingBgBottomOverColor: rgba($nero,.25);
 
@@ -71,12 +72,11 @@ $OpenSansLight: OpenSansLight, Geneva, Verdana, sans-serif;
 $OpenSansRegular: OpenSansRegular, Geneva, Verdana, sans-serif;
 $OpenSansSemiBold: OpenSansSemiBold, Geneva, Verdana, sans-serif;
 
-// Font families button
+// Font families content
 // -------------------------
 $fonntFamiliBtn: $OpenSansSemiBold;
-
-// font heading
 $fontHeading: $OpenSansSemiBold;
+$fontArrow: $OpenSansSemiBold;
 
 // Font sizes
 // -------------------------

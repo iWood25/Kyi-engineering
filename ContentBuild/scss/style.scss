@@ -31,6 +31,7 @@ section, .header {
 	line-height: 0;
 	z-index: 2;
 
+
 	@include maxScreen($middle) {
 		padding: 0.4rem 0;
 	}
@@ -168,6 +169,7 @@ section, .header {
 	max-width: 55rem;
 	font-size: 3rem;
 	background-color: $headerOverColor;
+	margin-bottom: 7%;
 	animation-delay: 1s;
 
 	@include maxScreen($middle) {
@@ -185,12 +187,11 @@ section, .header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 8%;
+	bottom: 11%;
 	z-index: 2;
 }
 
 .btn {
-	margin-top: 6%;
 	animation-delay: 1.4s;
 
 	@include maxScreen($small) {
@@ -206,7 +207,7 @@ section, .header {
 // Section_about
 // --------------------------------------------------
 
-.section_about {
+.section__common {
 	padding: 7rem 0 5rem;
 	background-color: $sectBgColor;
 }
@@ -304,16 +305,81 @@ section, .header {
 // Section button
 // --------------------------------------------------
 
-.section__button{
+.section__button {
 	padding: 5rem 0;
 	text-align: center;
 	background-color: $colorSectBgButton;
-	.btn{
+
+	.button__sect {
 		margin-top: 0;
+		animation-delay: .4s;
 	}
 }
 
+// Section arrows
+// --------------------------------------------------
+.arrows {
+	color: $colorTextArrow;
+	font-family: $fontArrow;
+	font-size: 1.6rem;
+	text-align: center;
+	padding-left: 4rem;
 
+
+	.arrow {
+		width: 29rem;
+		height: 12.9rem;
+		display: inline-block;
+		position: relative;
+		margin-left: -4rem;
+		vertical-align: top;
+		padding-left: 2rem;
+
+		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.arrow__content {
+			line-height: 2.2rem;
+			position: relative;
+			z-index: 2;
+			margin-left: 4rem;
+			text-align: left;
+			height: 12.9rem;
+
+			&:before{
+				content: "";
+				display: inline-block;
+				min-height: inherit;
+				height: 100%;
+				vertical-align: middle;
+			}
+
+			.wrapper-content {
+				display: inline-block;
+				vertical-align: middle;
+				width: 22rem;
+
+				.arrow__content-icon {
+					float: left;
+					font-size: 4rem;
+					position: relative;
+					margin-right: 3.2rem;
+					margin-bottom: 1rem;
+					height: 100%;
+				}
+
+				.text__number {
+					font-size: 2.1rem;
+					position: absolute;
+					margin-left: -2.2rem;
+				}
+			}
+		}
+	}
+}
 
 
 // Footer
@@ -333,11 +399,15 @@ section, .header {
 		opacity: .7;
 		transition: opacity .2s ease-out;
 
+		@include maxScreen($small) {
+			width: 15rem;
+		}
+
 		&:hover {
 			opacity: 1;
 
-			path+path {
-			fill: $casablanca !important;
+			path + path {
+				fill: $casablanca !important;
 			}
 		}
 	}
@@ -349,6 +419,11 @@ section, .header {
 	vertical-align: middle;
 	min-height: 5.9rem;
 
+	@include maxScreen($small) {
+		min-height: 5rem;
+		padding: .8rem 0;
+	}
+
 	&::after {
 		display: inline-block;
 	}
@@ -359,6 +434,10 @@ section, .header {
 	text-align: center;
 	vertical-align: middle;
 	width: 4rem;
+
+	@include maxScreen($small) {
+		width: 3rem;
+	}
 }
 
 .social__link {
@@ -367,6 +446,10 @@ section, .header {
 	color: $colorSocial;
 	transition: all 0.2s ease-out;
 
+	@include maxScreen($small) {
+		line-height: 4.1rem;
+		font-size: 1.7rem;
+	}
 
 	&:hover {
 		color: $casablanca;
