@@ -318,6 +318,14 @@ section, .header {
 
 // Section arrows
 // --------------------------------------------------
+.section__arrows {
+	background-color: $workingBgTopOverColor;
+
+	.h2 {
+		color: $colorTitle;
+	}
+}
+
 .arrows {
 	color: $colorTextArrow;
 	font-family: $fontArrow;
@@ -325,15 +333,25 @@ section, .header {
 	text-align: center;
 	padding-left: 4rem;
 
-
 	.arrow {
 		width: 29rem;
 		height: 12.9rem;
 		display: inline-block;
 		position: relative;
-		margin-left: -4rem;
+		margin-left: -4.5rem;
 		vertical-align: top;
 		padding-left: 2rem;
+		transition: all .5s ease;
+
+		&:hover {
+			transform: scale(1.08);
+			z-index: 1;
+
+			path {
+				fill-opacity: 0 !important;
+				stroke-opacity: 1 !important;
+			}
+		}
 
 		svg {
 			position: absolute;
@@ -348,8 +366,9 @@ section, .header {
 			margin-left: 4rem;
 			text-align: left;
 			height: 12.9rem;
+			opacity: 0;
 
-			&:before{
+			&:before {
 				content: "";
 				display: inline-block;
 				min-height: inherit;
@@ -378,9 +397,103 @@ section, .header {
 				}
 			}
 		}
+
+		.arrow__content-on {
+			opacity: 1;
+		}
 	}
 }
 
+// Section button-arrow
+// --------------------------------------------------
+
+.section__button-next {
+	background-color: $workingBgBottomOverColor;
+}
+
+// Section Portfolio
+// --------------------------------------------------
+
+.portfolio__list, .filter {
+	text-align: center;
+}
+
+.filter {
+	display: inline-block;
+	margin: 0 1rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	cursor: pointer;
+	letter-spacing: .1rem;
+	color: lighten($black, 50%);
+	font-family: $OpenSansLight;
+
+	&.active {
+		color: $black;
+		border-bottom: .1rem solid lighten($casablanca, 10%);
+		font-family: $OpenSansSemiBold;
+	}
+}
+
+.portfolio__list {
+	margin-bottom: 5rem;
+}
+
+.portfolio__item_content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, .6);
+	text-align: center;
+	padding-top: 5%;
+	opacity: 0;
+	transition: all .5s ease;
+
+	&:hover {
+		opacity: 1;
+		padding-top: 10%;
+	}
+
+	.h3 {
+		color: $white;
+		text-indent: unset;
+		padding: 0;
+		margin-bottom: 1.3rem;
+	}
+
+
+	.portfolio__item_content-description {
+		color: $white;
+		text-indent: unset;
+		margin-bottom: 1.3rem;
+	}
+}
+
+.popup__description {
+	background-color: $white;
+	max-width: 70rem;
+	margin: auto;
+	position: relative;
+
+	.h3, .popup__description-text {
+		margin: 0 2rem;
+	}
+
+	.h3 {
+		margin-bottom: 1rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $OpenSansLight;
+		text-indent: unset;
+	}
+
+	.popup__description-text {
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+}
 
 // Footer
 // --------------------------------------------------

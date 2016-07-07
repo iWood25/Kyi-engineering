@@ -255,6 +255,10 @@
 	background-color: $white;
 }
 
+.opacity-bg-46{
+	background-color: $workingBgTopOverColor;
+}
+
 // Cursor
 // -------------------------
 
@@ -279,4 +283,8 @@
   @include maxScreen($large) {
    display: block;
   }
+}
+
+.hidden{
+	display: none;
 }

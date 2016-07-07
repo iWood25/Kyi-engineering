@@ -37,6 +37,21 @@ $colorTextBtn: $blackPearl;
 	}
 }
 
+// Button portfolio item content
+// -------------------------
+	.portfolio__item_content-button {
+		background-color: transparent;
+		border: 1px solid $casablanca;
+		color: $white;
+		padding: .2rem 1rem;
+		transition: all .5s ease;
+		display: inline-block;
+		&:hover{
+			background-color: $casablanca;
+			color: $black;
+		}
+	}
+
 // Button sizes
 // -------------------------
 

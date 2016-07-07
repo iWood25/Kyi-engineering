@@ -6,7 +6,7 @@
 	$(".btn, .mouse-icon, .common__title").animated("fadeInUp");
 
 
-	//when resizing height header = height window 
+	// When resizing height header = height window 
 
 	function heightDetect() {
 		$(".header").css("height", $(window).height());
@@ -18,7 +18,7 @@
 	});
 
 
-	// create mobile menu
+	// Create mobile menu
 
 	function createMenu() {
 
@@ -28,7 +28,7 @@
 		$(".my-menu").find("li").attr("class", "mobile__menu-item");
 		$(".my-menu").find("a").attr("class", "mobile__menu-link");
 
-		// when we click on the link - menu is fadeout
+		// When we click on the link - menu is fadeout
 		$(".my-menu a").click(function () {
 			$(".mobile__menu").fadeOut(600);
 			$(".sandwich").toggleClass("active");
@@ -37,7 +37,7 @@
 
 	};
 
-	// sandwich menu
+	// Sandwich menu
 	$(".toggle-menu").click(function () {
 		$(".sandwich").toggleClass("active");
 
@@ -72,21 +72,40 @@
 
 	// Way points
 	$(".arrows").waypoint(function () {
-		$(".arrow").each(function (index) {
+		$(".arrows .arrow").each(function (index) {
 			var ths = $(this);
 			setTimeout(function () {
 				var myAnimation = new DrawFillSVG({
 					elementId: "arrow__svg"+index
 				});
-			}, 800 * index);
-		});
+				ths.children(".arrow__content").addClass("arrow__content-on");
+			}, 500 * index);
+		}); this.destroy();
 	}, {
 		offset: "80%"
 	});
 
 
+	// MixItUp
+	$('#portfolio__container').mixItUp();
 
+	// Portfolio list item
+	$(".portfolio__list-item").click(function () {
+		$(".portfolio__list-item").removeClass("active");
+		$(this).addClass("active");
+	});
 
+	// Magnific Popup
+	$('.popup_content').magnificPopup({
+		type: "inline",
+		midClick: true
+	});
+
+	// Distribution id for Magnific Popup
+	$(".portfolio__item").each(function (i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".popup__description").attr("id", "work_" + i);
+	});
 
 
 	//Chrome Smooth Scroll

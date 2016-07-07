@@ -95,5 +95,6 @@ gulp.task('compress-img', function () {
 		.pipe(gulp.dest(path.content.img));
 });
 
+
 // default task
 gulp.task('default', ['clean', 'sass', 'sass:watch', 'minify-js', 'compress-img', 'browser-sync']);
