@@ -15,7 +15,11 @@ section, .header {
 
 // header
 // --------------------------------------------------
-
+.wrapper__header{
+	background-image: url('../../Content/img/bg.jpg');
+	background-attachment: fixed;
+	background-position: center;
+}
 .header {
 	background-color: $headerOverColor;
 	min-height: 62rem;
@@ -149,6 +153,12 @@ section, .header {
 	left: 0;
 	z-index: 1;
 
+	.btn {
+	@include maxScreen($small) {
+		margin-top: 13%;
+	}
+}
+
 	.section-title_descr {
 		display: table-row;
 
@@ -191,13 +201,6 @@ section, .header {
 	z-index: 2;
 }
 
-.btn {
-	animation-delay: 1.4s;
-
-	@include maxScreen($small) {
-		margin-top: 13%;
-	}
-}
 
 .mouse-icon {
 	animation-delay: 1.8s;
@@ -305,6 +308,7 @@ section, .header {
 // Section button
 // --------------------------------------------------
 
+
 .section__button {
 	padding: 5rem 0;
 	text-align: center;
@@ -318,6 +322,13 @@ section, .header {
 
 // Section arrows
 // --------------------------------------------------
+
+.wrapper__section-arrow{
+	background-image: url('../../Content/img/bg_arrow.jpg');
+	background-attachment: fixed;
+	background-position: top;
+}
+
 .section__arrows {
 	background-color: $workingBgTopOverColor;
 
@@ -494,6 +505,51 @@ section, .header {
 		margin-bottom: 2rem;
 	}
 }
+
+
+
+// Contacts
+// --------------------------------------------------
+.wrapper__section-contacts{
+	background-image: url('../../Content/img/bg_arrow.jpg');
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.contacts{
+	background-color: $contOverColor;
+
+	.h2 {
+		color: $colorTitle;
+	}
+}
+
+.wrapper__adds {
+	font-size: 1.8rem;
+	font-family: $OpenSansLight;
+	color: $white;
+
+	.map{
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	.adds-text {
+		text-indent: unset;
+		margin-top: 0;
+		margin-bottom: .8rem;
+		.fa{
+			color: $casablanca;
+			margin-right: .5rem;
+			font-size: 2.4rem;
+			width: 2.5rem;
+			text-align: center;
+		}
+	}
+
+}
+
+
 
 // Footer
 // --------------------------------------------------

@@ -2,25 +2,73 @@
 // Form
 // --------------------------------------------------
 
+$colorBgInput: rgba(255,255,255, .8);
+$colorBgInputFocus: rgba(255,255,255, .9);
+$colorPlaceholder: rgba($black, .3);
+$colorError: darken($casablanca, 10%);
+$colorOk: #6E986E;
+
+*::-webkit-input-placeholder {
+	color: $colorPlaceholder;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: $colorPlaceholder;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: $colorPlaceholder;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: $colorPlaceholder;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #222;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+	color: #222;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 100rem white inset;
+	border-bottom: .4rem solid white !important;
+}
+
+
+
 input,
 textarea {
-	background-color: $silver;
+	background-color: $colorBgInput;
 	border: 0;
+	padding: .9rem 1.2rem .7rem;
 	box-shadow: none;
-	color: $colorText;
+	color: #222;
 	display: block;
+	width: 100%;
 	font-family: $OpenSansRegular;
 	font-size: 1.4rem;
-	letter-spacing: 1px;
-	padding: 2.4rem 3.4rem;
+	letter-spacing: .1rem;
 	position: relative;
-	width: 100%;
-	// change autofill text color
-	-webkit-text-fill-color: $silver;
+	border-bottom: transparent .4rem solid;
+	transition: all .5s ease;
+
+	&:focus {
+		border-bottom: lighten($casablanca, 20%) .4rem solid;
+		background-color: $colorBgInputFocus;
+	}
 
 	&:focus {
 	}
-
 	// hide input placeholder on field focus
 	&:focus::-webkit-input-placeholder {
 		opacity: 0;
@@ -40,6 +88,53 @@ textarea {
 }
 
 textarea {
-	height: 36.5rem;
+	height: 6.5rem;
 	resize: none;
+}
+
+.form {
+	padding: 3.2rem 2.6rem;
+	background-color: $zambezi;
+	color: $white;
+
+	&__head {
+		text-align: center;
+		margin-bottom: 1rem;
+
+		.h4 {
+			margin-bottom: 1rem;
+		}
+
+		.form__head_p {
+			text-indent: unset;
+			opacity: .8;
+			font-size: 1.4rem;
+			font-family: $OpenSansRegular;
+		}
+	}
+
+	label {
+		display: block;
+
+		.label_name {
+			display: block;
+			opacity: .6;
+			font-size: 1.4rem;
+			margin-bottom: .3rem;
+
+			.star {
+				margin-right: .5rem;
+			}
+		}
+	}
+}
+
+.input-error {
+	color: $colorError;
+	font-size: 1.3rem;
+}
+
+.input-ok {
+	color: $colorOk;
+	font-size: 1.3rem;
 }
