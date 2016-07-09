@@ -152,6 +152,7 @@ section, .header {
 	top: 0;
 	left: 0;
 	z-index: 1;
+	animation-delay: 1s;
 
 	.btn {
 	@include maxScreen($small) {
@@ -203,7 +204,7 @@ section, .header {
 
 
 .mouse-icon {
-	animation-delay: 1.8s;
+	animation-delay: 1.3s;
 }
 
 
@@ -443,6 +444,16 @@ section, .header {
 		color: $black;
 		border-bottom: .1rem solid lighten($casablanca, 10%);
 		font-family: $OpenSansSemiBold;
+	}
+}
+
+.portfolio__item{
+	transition: all .5s ease;
+	&-on{
+		opacity: 1;
+	}
+	&-off{
+		opacity: 0;
 	}
 }
 

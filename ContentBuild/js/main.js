@@ -2,14 +2,59 @@
 
 	// Animate CSS
 	$(".title").animated("zoomIn");
-	$(".btn-m, .mouse-icon, .common__title").animated("fadeInUp");
+	$(".header .btn").animated("fadeInUp");
+	$(".mouse-icon").animated("fadeInUp");
+	$(".common__title").animated("zoomIn");
+	$(".h3").animated("zoomIn");
+	$(".portfolio__filter").animated("fadeInUp");
+		$(".p").animated("fadeInUp");
+	$(".list").animated("fadeInUp");
+	$(".contacts__adds").animated("fadeInLeft");
+	$(".contacts__form").animated("fadeInRight");
+
+	// Way points
+	$(".cards").waypoint(function () {
+		$(".card").each(function (index) {
+			var ths = $(this);
+			setInterval(function () {
+				ths.removeClass("card-off").addClass("card-on");
+			}, 250 * index);
+		});
+	}, {
+		offset: "70%"
+	});
+
+	// Way points
+	$(".arrows").waypoint(function () {
+		$(".arrows .arrow").each(function (index) {
+			var ths = $(this);
+			setTimeout(function () {
+				var myAnimation = new DrawFillSVG({
+					elementId: "arrow__svg" + index
+				});
+				ths.children(".arrow__content").addClass("arrow__content-on");
+			}, 700 * index);
+		}); this.destroy();
+	}, {
+		offset: "70%"
+	});
+
+	$(".portfolio").waypoint(function () {
+		$(".portfolio__item ").each(function (index) {
+			var ths = $(this);
+			setInterval(function () {
+				ths.removeClass("portfolio__item-off").addClass("portfolio__item-on");
+			}, 200 * index);
+		});
+	}, {
+		offset: "50%"
+	});
 
 
 	// When resizing height header = height window
 	function heightDetect() {
 		$(".header").css("height", $(window).height());
 	};
-
 	heightDetect();
 	$(window).resize(function () {
 		heightDetect();
@@ -46,33 +91,6 @@
 
 	// Equal Heights
 	$(".card").equalHeights();
-
-	// Way points
-	$(".cards").waypoint(function () {
-		$(".card").each(function (index) {
-			var ths = $(this);
-			setInterval(function () {
-				ths.removeClass("card-off").addClass("card-on");
-			}, 250 * index);
-		});
-	}, {
-		offset: "80%"
-	});
-
-	// Way points
-	$(".arrows").waypoint(function () {
-		$(".arrows .arrow").each(function (index) {
-			var ths = $(this);
-			setTimeout(function () {
-				var myAnimation = new DrawFillSVG({
-					elementId: "arrow__svg" + index
-				});
-				ths.children(".arrow__content").addClass("arrow__content-on");
-			}, 800 * index);
-		}); this.destroy();
-	}, {
-		offset: "80%"
-	});
 
 	// MixItUp
 	$('#portfolio__container').mixItUp();
