@@ -481,9 +481,9 @@ svg {
 
 /* line 44, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_mobileMenu.scss */
 .mobile__menu-link {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
-  padding: 4rem 5rem;
+  padding: 4rem 0;
   letter-spacing: .3rem; }
 
 /* line 51, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_mobileMenu.scss */
@@ -1594,61 +1594,71 @@ section, .header {
   background-color: rgba(7, 12, 17, 0.3);
   min-height: 62rem;
   padding-top: 5rem; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     /* line 23, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .header {
       padding-top: 2rem; } }
+  @media screen and (max-width: 767px) {
+    /* line 23, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    .header {
+      padding-top: 0; } }
 
-/* line 33, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 37, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .top-line__header {
   background-color: rgba(0, 0, 0, 0.55);
   line-height: 0;
   z-index: 2; }
-  @media screen and (max-width: 767px) {
-    /* line 33, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  @media screen and (max-width: 1024px) {
+    /* line 37, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .top-line__header {
-      padding: 0.4rem 0; } }
+      padding: 0.4rem 0;
+      position: fixed;
+      width: 100%; } }
+  @media screen and (max-width: 767px) {
+    /* line 37, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    .top-line__header {
+      background-color: #000; } }
 
-/* line 44, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 53, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .header__logo {
   display: inline-block;
   line-height: 0; }
-  /* line 48, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 57, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .header__logo svg {
     width: 19.5rem;
     height: 5.9rem;
     opacity: .9;
     transition: opacity .2s ease-out; }
-    /* line 54, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 63, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .header__logo svg:hover {
       opacity: 1; }
     @media screen and (max-width: 767px) {
-      /* line 48, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 57, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .header__logo svg {
         width: 16rem;
         height: 5rem; } }
 
-/* line 65, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 74, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .header__menu {
   text-align: justify;
   font-size: 0;
   padding: 0 1rem; }
-  /* line 70, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 79, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .header__menu:after {
     display: inline-block;
     content: "";
     width: 100%;
     height: 0; }
   @media screen and (min-width: 1281px) {
-    /* line 65, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 74, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .header__menu {
       padding: 0 3rem; } }
 
-/* line 82, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 91, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .menu__item {
   display: inline-block; }
 
-/* line 87, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 96, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .menu__link {
   line-height: 1.5;
   font-size: 1.2rem;
@@ -1656,22 +1666,22 @@ section, .header {
   display: block;
   padding: 2.1rem 2rem;
   transition: all .2s ease-out; }
-  /* line 95, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 104, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .menu__link:hover {
     background-color: rgba(64, 64, 64, 0.55); }
 
 @media screen and (max-width: 767px) {
-  /* line 100, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 109, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .wrapper-phone {
     text-align: center; } }
 
-/* line 106, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 115, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .header__phone {
   color: #fff;
   font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif;
   font-size: 1.8rem;
   line-height: 2.2; }
-  /* line 112, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 121, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .header__phone .fa {
     color: #F39F18;
     font-size: 3rem;
@@ -1679,31 +1689,31 @@ section, .header {
     top: .4rem;
     margin-right: .5rem; }
     @media screen and (max-width: 480px) {
-      /* line 112, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 121, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .header__phone .fa {
         font-size: 2.5rem; } }
   @media screen and (max-width: 480px) {
-    /* line 106, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 115, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .header__phone {
       font-size: 1.5rem; } }
 
-/* line 129, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 138, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .header__callback {
   color: #cccccc;
   font-size: 1.2rem;
   line-height: 1.25;
   border-bottom: 0.1rem dotted #d9d9d9;
   transition: all .2s ease-out; }
-  /* line 136, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 145, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .header__callback:hover {
     color: #fff;
     border-color: transparent; }
   @media screen and (max-width: 767px) {
-    /* line 129, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 138, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .header__callback {
       font-size: 1.1rem; } }
 
-/* line 147, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 156, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .wrapper_section-title {
   display: table;
   width: 100%;
@@ -1714,19 +1724,19 @@ section, .header {
   z-index: 1;
   animation-delay: 1s; }
   @media screen and (max-width: 480px) {
-    /* line 157, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 166, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .wrapper_section-title .btn {
       margin-top: 13%; } }
-  /* line 163, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 172, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .wrapper_section-title .section-title_descr {
     display: table-row; }
-    /* line 166, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 175, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .wrapper_section-title .section-title_descr .section-title_centered {
       display: table-cell;
       text-align: center;
       vertical-align: middle; }
 
-/* line 174, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 183, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .title {
   display: inline-block;
   padding: 1rem 3.5rem;
@@ -1739,17 +1749,17 @@ section, .header {
   margin-bottom: 7%;
   animation-delay: 1s; }
   @media screen and (max-width: 767px) {
-    /* line 174, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 183, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .title {
       font-size: 2.5rem;
       border: 0.5rem solid #fff; } }
   @media screen and (max-width: 480px) {
-    /* line 174, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 183, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .title {
       font-size: 2.2rem;
       border: 0.4rem solid #fff; } }
 
-/* line 197, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 206, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .wrapper_mouse-icon {
   position: absolute;
   left: 0;
@@ -1757,24 +1767,24 @@ section, .header {
   bottom: 11%;
   z-index: 2; }
 
-/* line 206, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 215, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .mouse-icon {
   animation-delay: 1.3s; }
 
-/* line 214, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 223, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .section__common {
   padding: 7rem 0 5rem;
   background-color: #e4e4e4; }
 
-/* line 219, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 228, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .hr {
   margin-bottom: 3rem; }
 
-/* line 224, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 233, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .cards {
   text-align: center;
   perspective: 60rem; }
-  /* line 228, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 237, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .cards .card {
     width: 26rem;
     display: inline-block;
@@ -1788,23 +1798,23 @@ section, .header {
     border-bottom: 0.5rem solid #0f1419;
     transition: all 1.2s ease; }
     @media screen and (max-width: 1024px) {
-      /* line 228, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 237, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card {
         margin-bottom: 2rem; } }
-    /* line 245, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 254, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .cards .card:hover {
       border-bottom: 0.6rem solid #F39F18; }
-      /* line 248, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 257, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card:hover .card__icon {
         transform: scale(1.1); }
-    /* line 253, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 262, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .cards .card-on {
       opacity: 1; }
-    /* line 257, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 266, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .cards .card-off {
       transform: rotateY(120deg);
       opacity: 0; }
-    /* line 262, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 271, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .cards .card .card__icon {
       width: 12rem;
       height: 12rem;
@@ -1814,65 +1824,65 @@ section, .header {
       border-radius: 10rem;
       text-align: center;
       transition: all .5s ease; }
-      /* line 272, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 281, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card .card__icon .icon-text {
         display: inline-block;
         font-size: 5rem;
         font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif; }
-      /* line 278, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 287, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card .card__icon .fa {
         line-height: 12rem; }
-      /* line 282, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 291, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card .card__icon .fa-group {
         font-size: 6rem; }
-      /* line 286, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 295, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card .card__icon .fa-clock-o {
         font-size: 10rem; }
-    /* line 291, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 300, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .cards .card .card__p {
       color: #a9b8cb;
       text-indent: unset;
       margin-bottom: 0; }
-      /* line 296, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 305, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .cards .card .card__p .sale {
         font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif;
         color: #F39F18; }
-    /* line 302, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 311, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .cards .card .h4 {
       margin-top: 3rem;
       margin-bottom: 1.8rem; }
 
-/* line 313, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 322, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .section__button {
   padding: 5rem 0;
   text-align: center;
   background-color: #D6D6D6; }
-  /* line 318, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 327, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .section__button .button__sect {
     margin-top: 0;
     animation-delay: .4s; }
 
-/* line 327, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 336, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .wrapper__section-arrow {
   background-image: url("../../Content/img/bg_arrow.jpg");
   background-attachment: fixed;
   background-position: top; }
 
-/* line 333, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 342, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .section__arrows {
   background-color: rgba(0, 0, 0, 0.36); }
-  /* line 336, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 345, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .section__arrows .h2 {
     color: #fff; }
 
-/* line 341, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 350, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .arrows {
   color: #fff;
   font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
   text-align: center;
   padding-left: 4rem; }
-  /* line 348, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 357, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .arrows .arrow {
     width: 29rem;
     height: 12.9rem;
@@ -1882,20 +1892,20 @@ section, .header {
     vertical-align: top;
     padding-left: 2rem;
     transition: all .5s ease; }
-    /* line 358, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 367, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .arrows .arrow:hover {
       transform: scale(1.08);
       z-index: 1; }
-      /* line 362, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 371, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .arrows .arrow:hover path {
         fill-opacity: 0 !important;
         stroke-opacity: 1 !important; }
-    /* line 368, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 377, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .arrows .arrow svg {
       position: absolute;
       top: 0;
       left: 0; }
-    /* line 374, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 383, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .arrows .arrow .arrow__content {
       line-height: 2.2rem;
       position: relative;
@@ -1904,19 +1914,19 @@ section, .header {
       text-align: left;
       height: 12.9rem;
       opacity: 0; }
-      /* line 383, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 392, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .arrows .arrow .arrow__content:before {
         content: "";
         display: inline-block;
         min-height: inherit;
         height: 100%;
         vertical-align: middle; }
-      /* line 391, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 400, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .arrows .arrow .arrow__content .wrapper-content {
         display: inline-block;
         vertical-align: middle;
         width: 22rem; }
-        /* line 396, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+        /* line 405, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
         .arrows .arrow .arrow__content .wrapper-content .arrow__content-icon {
           float: left;
           font-size: 4rem;
@@ -1924,24 +1934,24 @@ section, .header {
           margin-right: 3.2rem;
           margin-bottom: 1rem;
           height: 100%; }
-        /* line 405, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+        /* line 414, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
         .arrows .arrow .arrow__content .wrapper-content .text__number {
           font-size: 2.1rem;
           position: absolute;
           margin-left: -2.2rem; }
-    /* line 413, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 422, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .arrows .arrow .arrow__content-on {
       opacity: 1; }
 
-/* line 422, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 431, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .section__button-next {
   background-color: rgba(0, 0, 0, 0.65); }
 
-/* line 429, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 438, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .portfolio__list, .filter {
   text-align: center; }
 
-/* line 433, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 442, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .filter {
   display: inline-block;
   margin: 0 1rem;
@@ -1951,27 +1961,25 @@ section, .header {
   letter-spacing: .1rem;
   color: gray;
   font-family: OpenSansLight, Geneva, Verdana, sans-serif; }
-  /* line 443, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 452, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .filter.active {
     color: #000;
     border-bottom: 0.1rem solid #f6b348;
     font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif; }
 
-/* line 450, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
-.portfolio__item {
-  transition: all .5s ease; }
-  /* line 452, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
-  .portfolio__item-on {
-    opacity: 1; }
-  /* line 455, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
-  .portfolio__item-off {
-    opacity: 0; }
-
 /* line 460, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.portfolio__item-on {
+  opacity: 1; }
+
+/* line 463, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+.portfolio__item-off {
+  opacity: 0; }
+
+/* line 468, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .portfolio__list {
   margin-bottom: 5rem; }
 
-/* line 464, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 472, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .portfolio__item_content {
   position: absolute;
   top: 0;
@@ -1983,71 +1991,71 @@ section, .header {
   padding-top: 5%;
   opacity: 0;
   transition: all .5s ease; }
-  /* line 476, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 484, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .portfolio__item_content:hover {
     opacity: 1;
     padding-top: 10%; }
-  /* line 481, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 489, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .portfolio__item_content .h3 {
     color: #fff;
     text-indent: unset;
     padding: 0;
     margin-bottom: 1.3rem; }
-  /* line 489, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 497, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .portfolio__item_content .portfolio__item_content-description {
     color: #fff;
     text-indent: unset;
     margin-bottom: 1.3rem; }
 
-/* line 496, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 504, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .popup__description {
   background-color: #fff;
   max-width: 70rem;
   margin: auto;
   position: relative; }
-  /* line 502, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 510, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .popup__description .h3, .popup__description .popup__description-text {
     margin: 0 2rem; }
-  /* line 506, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 514, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .popup__description .h3 {
     margin-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
     font-family: OpenSansLight, Geneva, Verdana, sans-serif;
     text-indent: unset; }
-  /* line 514, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 522, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .popup__description .popup__description-text {
     margin-top: 0;
     margin-bottom: 2rem; }
 
-/* line 524, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 532, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .wrapper__section-contacts {
   background-image: url("../../Content/img/bg_arrow.jpg");
   background-attachment: fixed;
   background-position: center; }
 
-/* line 530, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 538, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .contacts {
   background-color: rgba(0, 0, 0, 0.65); }
-  /* line 533, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 541, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .contacts .h2 {
     color: #fff; }
 
-/* line 538, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 546, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .wrapper__adds {
   font-size: 1.8rem;
   font-family: OpenSansLight, Geneva, Verdana, sans-serif;
   color: #fff; }
-  /* line 543, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 551, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .wrapper__adds .map {
     margin-top: 3rem;
     margin-bottom: 2rem; }
-  /* line 548, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 556, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .wrapper__adds .adds-text {
     text-indent: unset;
     margin-top: 0;
     margin-bottom: .8rem; }
-    /* line 552, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 560, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .wrapper__adds .adds-text .fa {
       color: #F39F18;
       margin-right: .5rem;
@@ -2055,69 +2063,69 @@ section, .header {
       width: 2.5rem;
       text-align: center; }
 
-/* line 568, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 576, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .footer {
   background-color: #000;
   padding: 3rem 0; }
 
-/* line 573, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 581, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .footer__logo {
   display: inline-block; }
-  /* line 576, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 584, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .footer__logo svg {
     width: 19.5rem;
     height: 5.9rem;
     opacity: .7;
     transition: opacity .2s ease-out; }
     @media screen and (max-width: 480px) {
-      /* line 576, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 584, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .footer__logo svg {
         width: 15rem; } }
-    /* line 586, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 594, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .footer__logo svg:hover {
       opacity: 1; }
-      /* line 589, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+      /* line 597, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
       .footer__logo svg:hover path + path {
         fill: #F39F18 !important; }
 
-/* line 596, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 604, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .footer__social {
   padding: .9rem 0;
   text-align: right;
   vertical-align: middle;
   min-height: 5.9rem; }
   @media screen and (max-width: 480px) {
-    /* line 596, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 604, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .footer__social {
       min-height: 5rem;
       padding: .8rem 0; } }
-  /* line 607, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 615, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .footer__social::after {
     display: inline-block; }
 
-/* line 612, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 620, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .social__item {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   width: 4rem; }
   @media screen and (max-width: 480px) {
-    /* line 612, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 620, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .social__item {
       width: 3rem; } }
 
-/* line 623, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 631, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .social__link {
   line-height: 4.1rem;
   font-size: 2.2rem;
   color: #A2A2A2;
   transition: all 0.2s ease-out; }
   @media screen and (max-width: 480px) {
-    /* line 623, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+    /* line 631, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .social__link {
       line-height: 4.1rem;
       font-size: 1.7rem; } }
-  /* line 634, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 642, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .social__link:hover {
     color: #F39F18;
     font-size: 3rem; }

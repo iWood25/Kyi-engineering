@@ -39,6 +39,7 @@
 		offset: "70%"
 	});
 
+	// Way points
 	$(".portfolio").waypoint(function () {
 		$(".portfolio__item ").each(function (index) {
 			var ths = $(this);
@@ -47,7 +48,7 @@
 			}, 200 * index);
 		});
 	}, {
-		offset: "50%"
+		offset: "70%"
 	});
 
 
@@ -122,6 +123,18 @@
 	} catch (err) {
 	};
 
+	/* Page scroll to id
+	/*-------------------------------------------------*/
+	$(".header__menu li a").mPageScroll2id();
+
+	/* Mouse icon
+	/*-------------------------------------------------*/
+	$(".mouse-icon").click(function () {
+		$("html, body").animate({
+			scrollTop: $(".about").offset().top
+		}, 800);
+	});
+
 
 	/* Validation form
 	/*-------------------------------------------------*/
@@ -130,8 +143,8 @@
 	var email_field = false;
 
 	var form = $('.form');
- // flag required fields
 
+ // flag required fields
 	$('input#name, input#phone, input#email').unbind().blur(function () {
 
 		var id = $(this).attr('id');

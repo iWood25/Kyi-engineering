@@ -21,12 +21,12 @@
     "mixitup": "^2.1.11",
     "waypoints": "^4.0.0",
     "equalHeights": "*",
-    "modernizr": "^3.3.1"
+    "modernizr": "^3.3.1",
+    "page-scroll-to-id": "^1.5.4"
   },
   "dependencies": {
     "normalize-css": "normalize.css#^3.0.3",
     "jquery": "^2.2.2",
-    "jquery.scrollTo": "^2.1.2",
     "font-awesome": "^4.5.0"
   }
 }

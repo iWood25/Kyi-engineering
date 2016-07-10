@@ -25,8 +25,12 @@ section, .header {
 	min-height: 62rem;
 	padding-top: 5rem;
 
-	@include maxScreen($middle) {
+	@include maxScreen($large) {
 		padding-top: 2rem;
+	}
+
+	@include maxScreen($middle) {
+		padding-top: 0;
 	}
 }
 
@@ -36,8 +40,13 @@ section, .header {
 	z-index: 2;
 
 
-	@include maxScreen($middle) {
+	@include maxScreen($large) {
 		padding: 0.4rem 0;
+		position: fixed;
+		width: 100%;
+	}
+	@include maxScreen($middle) {
+		background-color: $black;
 	}
 }
 
@@ -448,7 +457,6 @@ section, .header {
 }
 
 .portfolio__item{
-	transition: all .5s ease;
 	&-on{
 		opacity: 1;
 	}
