@@ -24,7 +24,7 @@ $colorTextBtn: $blackPearl;
 	text-decoration: none;
 	text-transform: uppercase;
 	box-shadow: 0 3px 0 $colorBoxShadow;
-	z-index: 2;
+	z-index: 1;
 	transition: all .25s ease;
 
 	
@@ -34,6 +34,7 @@ $colorTextBtn: $blackPearl;
 		outline: none;
 		text-decoration: none;
 		background-color: $colorBtnHover;
+		color: $black;
 	}
 }
 

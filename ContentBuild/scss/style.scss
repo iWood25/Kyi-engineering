@@ -326,7 +326,6 @@ section, .header {
 
 	.button__sect {
 		margin-top: 0;
-		animation-delay: .4s;
 	}
 }
 
@@ -363,6 +362,7 @@ section, .header {
 		vertical-align: top;
 		padding-left: 2rem;
 		transition: all .5s ease;
+		z-index: 1;
 
 		&:hover {
 			transform: scale(1.08);
@@ -643,4 +643,13 @@ section, .header {
 		color: $casablanca;
 		font-size: 3rem;
 	}
+}
+
+// Callback
+// --------------------------------------------------
+
+#callback, #requestСall{
+	max-width: 40rem;
+	margin: auto;
+	position: relative;
 }

@@ -94,7 +94,7 @@
 	$(".card").equalHeights();
 
 	// MixItUp
-	$('#portfolio__container').mixItUp();
+	$("#portfolio__container").mixItUp();
 
 	// Portfolio list item
 	$(".portfolio__list-item").click(function () {
@@ -103,9 +103,21 @@
 	});
 
 	// Magnific Popup
-	$('.popup_content').magnificPopup({
+	$(".popup_content").magnificPopup({
 		type: "inline",
 		midClick: true
+	});
+
+	$(".btn-m").click(function () {
+		$("#callback h4").html($(this).text());
+	}).magnificPopup({
+		type: "inline"
+	});
+
+	$(".header__callback").click(function () {
+		$("#requestСall h4").html($(this).text());
+	}).magnificPopup({
+		type: "inline"
 	});
 
 	// Distribution id for Magnific Popup
@@ -113,15 +125,6 @@
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".popup__description").attr("id", "work_" + i);
 	});
-
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if ($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch (err) {
-	};
 
 	/* Page scroll to id
 	/*-------------------------------------------------*/
@@ -245,6 +248,25 @@
 	});
 	/* End validation form
   /*-------------------------------------------------*/
+
+	/* End validation form
+  /*-------------------------------------------------*/
+	//Ajax sending forms
+	//Documentation: http://api.jquery.com/jquery.ajax/
+	$(".form").submit(function () {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function () {
+			alert("Спасибо за заявку!");
+			setTimeout(function () {
+				$.magnificPopup.close();
+				$(".form").trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 });
 
 $(window).load(function () {

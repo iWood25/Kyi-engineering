@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_typography.scss */
 * {
   box-sizing: border-box;
@@ -797,15 +798,16 @@ textarea {
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0 3px 0 #b57309;
-  z-index: 2;
+  z-index: 1;
   transition: all .25s ease; }
   /* line 31, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
   .btn:hover, .btn:active, .btn:focus {
     outline: none;
     text-decoration: none;
-    background-color: #f6b752; }
+    background-color: #f6b752;
+    color: #000; }
 
-/* line 42, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
+/* line 43, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
 .portfolio__item_content-button {
   background-color: transparent;
   border: 1px solid #F39F18;
@@ -813,17 +815,17 @@ textarea {
   padding: .2rem 1rem;
   transition: all .5s ease;
   display: inline-block; }
-  /* line 49, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
+  /* line 50, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
   .portfolio__item_content-button:hover {
     background-color: #F39F18;
     color: #000; }
 
-/* line 58, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
+/* line 59, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
 .btn-s {
   font-size: 1.2rem;
   padding: .6rem 1.2rem; }
 
-/* line 63, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
+/* line 64, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/core/_button.scss */
 .btn-m {
   font-size: 1.4rem;
   padding: 1.2rem 3rem;
@@ -1859,30 +1861,29 @@ section, .header {
   background-color: #D6D6D6; }
   /* line 327, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .section__button .button__sect {
-    margin-top: 0;
-    animation-delay: .4s; }
+    margin-top: 0; }
 
-/* line 336, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 335, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .wrapper__section-arrow {
   background-image: url("../../Content/img/bg_arrow.jpg");
   background-attachment: fixed;
   background-position: top; }
 
-/* line 342, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 341, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .section__arrows {
   background-color: rgba(0, 0, 0, 0.36); }
-  /* line 345, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 344, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .section__arrows .h2 {
     color: #fff; }
 
-/* line 350, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+/* line 349, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
 .arrows {
   color: #fff;
   font-family: OpenSansSemiBold, Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
   text-align: center;
   padding-left: 4rem; }
-  /* line 357, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+  /* line 356, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
   .arrows .arrow {
     width: 29rem;
     height: 12.9rem;
@@ -1891,7 +1892,8 @@ section, .header {
     margin-left: -4.5rem;
     vertical-align: top;
     padding-left: 2rem;
-    transition: all .5s ease; }
+    transition: all .5s ease;
+    z-index: 1; }
     /* line 367, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
     .arrows .arrow:hover {
       transform: scale(1.08);
@@ -2129,3 +2131,9 @@ section, .header {
   .social__link:hover {
     color: #F39F18;
     font-size: 3rem; }
+
+/* line 651, F:/IN/Kyi_engineering/start_Kyi/ContentBuild/scss/style.scss */
+#callback, #requestСall {
+  max-width: 40rem;
+  margin: auto;
+  position: relative; }
